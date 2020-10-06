@@ -1,6 +1,6 @@
 let fs = require('fs');
-const pasta = '/content/drive/My Drive/Musicas/03.Sleeper_m4a/'; //pasta onde ficam as musicas
-const comando = '"/content/drive/My Drive/Programas/ni-stem-1.0/ni-stem" create -m "/content/drive/My Drive/Programas/ni-stem-1.0/StemMetadata.json" -s';  // comando que converte as musicas
+const pasta = '/content/drive/My Drive/MyStems/spleeter/'; //pasta onde ficam as musicas
+const comando = '"/content/Final_Stem_Creator/ni-stem" create -m "/content/Final_Stem_Creator/StemMetadata.json" -s';  // comando que converte as musicas
 const cx = "-x"; //parametro do comando
 const tag = "-t";
 const aspas = '"'; // aspas necessárias no endereço do arquivo
