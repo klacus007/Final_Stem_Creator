@@ -1,19 +1,19 @@
 echo -e "Movendo e Renomeando...\n"
 
-cd '/content/drive/My Drive/Musicas/03.Sleeper_m4a/'
+cd '/content/drive/My Drive/MyStems/spleeter/'
 
 
 for f in *.5.master.stem.m4a;do
-mv "$f" "/content/drive/My Drive/Musicas/04.Backup_Stems/Colab_Stems/";done
+mv "$f" "/content/drive/My Drive/MyStems/stems/";done
 
 
-cd "/content/drive/My Drive/Musicas/04.Backup_Stems/Colab_Stems/"
+cd "/content/drive/My Drive/MyStems/stems/"
 
 for f in *.5.master.stem.m4a; do
     mv -- "$f" "${f%_PN.5.master.stem.m4a}.stem.m4a"
 done
 
-cd '/content/drive/My Drive/Musicas/03.Sleeper_m4a/'
+cd '/content/drive/My Drive/MyStems/spleeter/'
 
 for f in *.5.master.m4a; do
     rm "$f"
@@ -28,7 +28,7 @@ for f in *_PN.5.master.aiff; do
 done
 
 for f in *.aiff; do
-    mv "$f" "/content/drive/My Drive/Musicas/02.Platinum_Notes_aiff"
+    mv "$f" "/content/drive/My Drive/MyStems/originals"
 done
 
-rm -rf "/content/drive/My Drive/Musicas/03.Sleeper_m4a/output"
+rm -rf "/content/drive/My Drive/MyStems/spleeter/output"
