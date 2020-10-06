@@ -1,0 +1,5 @@
+bash "./1.move-rename-start.sh"
+bash "./2.cover.sh"
+node "./5.stemai.js"  >  "./6.convert.sh"
+bash "./7.executar.sh"
+bash "./8.move-rename-end.sh"
