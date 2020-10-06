@@ -1,2 +1,2 @@
-cd "/content/drive/My Drive/Programas/ni-stem-1.0"
-bash "/content/drive/My Drive/Programas/ni-stem-1.0/6.convert.sh"
+cd "/content/Final_Stem_Creator/"
+bash "/content/Final_Stem_Creator/6.convert.sh"
