@@ -72,7 +72,7 @@ create_tags_json() {
 done
 
     for f in *.6.tags.json; do
-    mv "$f" "/content/drive/My Drive/Musicas/03.Sleeper_m4a"
+    mv "$f" "/content/drive/My Drive/MyStems/spleeter"
 done
 
     cd ../../
@@ -94,8 +94,8 @@ setup_file() {
 }
 
 setup() {
-    if [[ $("/content/drive/My Drive/Programas/ni-stem-1.0/ni-stem" -h) == "" ]]; then
-        echo "Please install ni-stem before running Stemgen."
+    if [[ $("/content/Final_Stem_Creator/ni-stem" -h) == "" ]]; then
+        echo "Please install ni-stem before running StemCreator."
         exit 2
     fi
 
