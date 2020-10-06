@@ -16,7 +16,7 @@ stemOutExtension = ".m4a"
 _windows = platform.system() == "Windows"
 
 _supported_files_no_conversion = [".m4a", ".mp4", ".m4p"]
-_supported_files_conversion = [".wav", ".wave", ".aif", ".aiff", ".flac"]
+_supported_files_conversion = [".wav", ".wave", ".aif", ".aiff", ".mp3", ".flac"]
 _supported_files = _supported_files_no_conversion + _supported_files_conversion
 
 def _removeFile(path):
@@ -126,7 +126,7 @@ class StemCreator:
         outputFilePath = "".join([root, stemOutExtension])
         _removeFile(outputFilePath)
 
-        folderName = "GPAC_win"   if _windows else "/content/drive/My Drive/Programas/ni-stem-1.0/gpac/"
+        folderName = "GPAC_win"   if _windows else "/content/Final_Stem_Creator/gpac/"
         executable = "mp4box.exe" if _windows else "/usr/bin/MP4Box"
         mp4box     = os.path.join(_getProgramPath(), folderName, executable)
         
@@ -198,8 +198,8 @@ class StemMetadataViewer:
         self._metadata = {}
 
         if stemFile:
-            folderName = "GPAC_win"   if _windows else "GPAC_mac"
-            executable = "mp4box.exe" if _windows else "mp4box"
+            folderName = "GPAC_win"   if _windows else "/content/Final_Stem_Creator/gpac/"
+            executable = "mp4box.exe" if _windows else "/usr/bin/MP4Box"
             mp4box     = os.path.join(_getProgramPath(), folderName, executable)
 
             callArgs = [mp4box]
