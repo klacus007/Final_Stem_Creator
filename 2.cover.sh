@@ -1,7 +1,4 @@
-cd "/content/drive/My Drive/Musicas/03.Sleeper_m4a"
+cd "/content/drive/My Drive/MyStems/spleeter"
 
-#cd "/Users/andersonanitocristovao/Music/Convertido porMediaHuman/"
-
-
-for f in *.aiff; do "/content/drive/My Drive/Programas/ni-stem-1.0/3.metadata.sh" -i "$f" ; done 
+for f in *.aiff; do "/content/Final_Stem_Creator/3.metadata.sh" -i "$f" ; done 
 
